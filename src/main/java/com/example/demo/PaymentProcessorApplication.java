@@ -11,10 +11,9 @@ public class PaymentProcessorApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(PaymentProcessorApplication.class, args);
 	}
-	
-	@Override
+
+    @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(PaymentProcessorApplication.class);
     }
-
 }
