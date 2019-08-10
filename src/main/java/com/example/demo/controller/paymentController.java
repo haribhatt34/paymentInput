@@ -116,7 +116,7 @@ public class paymentController {
 
 //		################################# Connection to Simulator ##############################################
 
-		URL url = new URL("http://localhost:9090/paymentSimulator");
+		URL url = new URL("http://localhost:8080/paymentSimulator");
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		// add request header
 		con.setRequestMethod("POST");
@@ -166,7 +166,7 @@ public class paymentController {
 		String otp = request.getParameter("otp");
 		String transactionId = request.getParameter("transaction");
 
-		URL url = new URL("http://localhost:9090/debitCredit");
+		URL url = new URL("http://localhost:8080/debitCredit");
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		// add request header
 		con.setRequestMethod("POST");
